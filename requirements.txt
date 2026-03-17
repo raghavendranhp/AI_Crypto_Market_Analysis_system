@@ -1,0 +1,7 @@
+jupyter
+streamlit
+groq
+scikit-learn
+pandas
+numpy
+joblib
