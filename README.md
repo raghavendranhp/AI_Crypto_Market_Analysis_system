@@ -2,6 +2,10 @@
 
 An end-to-end Machine Learning and LLM-powered project to analyze cryptocurrency market trends, detect anomalies, and generate actionable trading signals using Groq's Llama 3.1 model.
 
+## Live Demo
+![Demo](live_demo.gif)
+
+
 ## Folder Structure
 ```text
 /
@@ -18,7 +22,6 @@ An end-to-end Machine Learning and LLM-powered project to analyze cryptocurrency
 ├── data/
 │   └── crypto_trading_dataset.csv
 ├── .env
-├── .instructions
 ├── requirements.txt
 └── README.md
 ```
@@ -54,6 +57,6 @@ streamlit run app/app.py
 ```
 
 ## Architecture
-- **Phase 1**: Data loading, feature engineering (MA7, MA30, Volatility Index, Volume Spike Ratio), and model training using `RandomForestClassifier` (Trend Classification) and `IsolationForest` (Anomaly Detection).
-- **Phase 2 & 3**: Integration with the `Groq` API to leverage state-of-the-art Llama 3.1 LLM for concise, expert quantitative trading insights. The LLM adheres strictly to a 500-character limit and avoids emojis.
-- **Phase 4**: An interactive `Streamlit` frontend to perform What-If analysis by adjusting market parameters dynamically. The final output is rendered strictly as robust JSON.
+- **1**: Data loading, feature engineering (MA7, MA30, Volatility Index, Volume Spike Ratio), and model training using `RandomForestClassifier` (Trend Classification) and `IsolationForest` (Anomaly Detection).
+- **2**: Integration with the `Groq` API to leverage state-of-the-art Llama 3.1 LLM for concise, expert quantitative trading insights. The LLM adheres strictly to a 500-character limit and avoids emojis.
+- **3**: An interactive `Streamlit` frontend to perform What-If analysis by adjusting market parameters dynamically. The final output is rendered strictly as robust JSON.
