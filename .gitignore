@@ -2,5 +2,4 @@ venv/
 __pycache__/
 .env
 .instructions
-app/models/*.joblib
-app/models/*.pkl
+
